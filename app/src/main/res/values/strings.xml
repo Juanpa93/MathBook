@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name"> Formulario </string>
+    <string name="formulario_de_registro">Formulario de registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="password">Password</string>
+    <string name="repetir_password">Repetir password</string>
+    <string name="guardar">Guardar</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="sexo">Sexo</string>
+    <string name="deportes">Deportes</string>
+    <string name="cine">Cine</string>
+    <string name="videojuegos">Videojuegos</string>
+    <string name="musica">Música</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="ciudad_de_nacimiento">Ciudad de nacimiento</string>
+    <string name="formato_fecha">dd/mm/aaaa</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingrese_correo">Ingrese correo</string>
+    <string name="ingrese_contrase_a">Ingrese contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="correomain">CorreoMain</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+
+
+    <string-array name="lista_ciudades">
+        <item>Seleccione una ciudad</item>
+        <item>Medellín</item>
+        <item>Santiago de Cali</item>
+        <item>Armenia</item>
+        <item>Tunja</item>
+        <item>Bucaramanga</item>
+        <item>Otra</item>
+    </string-array>
+
+</resources>

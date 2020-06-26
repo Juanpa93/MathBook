@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/boton_redondo"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:text="@string/formulario_de_registro"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="13sp"
+                tools:ignore="Autofill"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:hint="@string/correo_electr_nico"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="13sp"
+                tools:ignore="Autofill"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:hint="@string/telefono"
+                android:inputType="phone"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="13sp"
+                tools:ignore="Autofill"
+                android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="2"
+                    android:text="@string/fecha_de_nacimiento"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_fecha_nacimiento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/formato_fecha"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+
+                <ImageButton
+                    android:id="@+id/ib_calendario"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_redondo4"
+                    app:srcCompat="@drawable/calendario"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/ciudad_de_nacimiento"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_ciudades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/boton_redondo4"
+                    android:entries="@array/lista_ciudades"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="13sp"
+                tools:ignore="Autofill"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/et_reppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:hint="@string/repetir_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="13sp"
+                tools:ignore="Autofill"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/bt_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/boton_redondo2"
+                android:text="@string/guardar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
